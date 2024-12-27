@@ -60,6 +60,6 @@ input_data_scaled = scaler.transform(input_data)
 
 # Predict churn
 prediction = model.predict(input_data_scaled)
-prediction_proba = prediction[0][0]
+predicted_salary = prediction[0][0]
 
 st.write(f'Predicted Estimated Salary : ${predicted_salary:.2f}')
